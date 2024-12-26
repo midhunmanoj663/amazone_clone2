@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazone</title>
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/thumbnails/014/018/561/small/amazon-logo-on-transparent-background-free-vector.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+</head>
+<body>
+    <!--head navigation bar-->
+    <nav class="navbar navbar-expand-xxl" id="Amazon">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="assets/amazon_logo.png" width="100" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <!--Location-->
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                    <div class="nv-contry">
+                        <div>
+                            Deliver to United states<br>
+                            <b><i class="bi bi-geo-alt"></i>Update Location</b>
+                        </div>
+                    </div>
+                </a>
+              </li>
+
+              <!--Search bar-->
+
+              <form class="d-flex nv-search" role="search">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="nv-search-drp">
+                      All
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <input class="form-control me-2 rounded-0" type="search" placeholder="Search Amazone.in" aria-label="Search" id="search-bar">
+                <button class="btn btn-warning " id="nv-search-btn" type="search"><img src="assets/search_icon.png" width="25" alt=""></button>
+              </form>
+
+              <!-------------Language------------->
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/us_flag.png" width="20" alt="">EN
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Tamil</a></li>
+                  <li><a class="dropdown-item" href="#">Telug</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                </ul>
+              </li>
+
+              <!------------------Sign in----------------->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    hello,sign in <br>Account & Lists
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="sign.html">Sign in</a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="signup.html">signup</a></li>
+                </ul>
+              </li>
+
+              <!--Return and orders-->
+
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Returns<br>& Orders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="cart.html"><img src="assets/cart_icon.png" width="40" alt=""> Cart</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!----------------2nd navigatin bar----------------->
+    
+    <nav class="navbar navbar-expand-xxl nvbr1" id="nvbr1">
+        <div class="container-fluid" id="nvbr2">
+
+            <!--ALL-->
+
+            <a class="navbar-brand text-white" href="#">
+                <i class="bi bi-list" onclick="togglemenu()"></i>All
+            </a>
+            <div class="All-menu" id="All-menu">
+              <i class="bi bi-x close-icon" onclick="togglemenu()"></i>
+              <h1><i class="bi bi-person-circle text-white"></i><a href="">Hello Sign in</a></h1>
+              <p>
+                <h6>Trending</h6>
+                <p><a href="">Best Sellers</a></p>
+                <p><a href="">New Releases</a></p>
+                <p><a href="">Movers and Shakers</a></p>
+                <hr>
+                <h6>Help & Settings</h6>
+                <p><a href="sign.html">Sign in</a></p>
+              </p>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <!--DROPDOWN1-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Fresh
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Fruits</a></li>
+                      <li><a class="dropdown-item" href="#"></a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#"></a></li>
+                    </ul>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">MX Player</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Sell</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Best Sellers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Today's Deals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Mobiles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Customer Service</a>
+              </li>
+
+              <!--DROPDOWN 2-->
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Prime
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Prime video</a></li>
+                  <li><a class="dropdown-item" href="#">Prime music</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                </ul>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link text-white" href="#">Electronics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Home & Kitchen</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Amazone Pay</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">New Releases</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Fashion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Car & Motorbike</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Computers</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!----------------------------Body part----------------------->
+
+      <!--Header slider-->
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/header1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/header2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/header3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/header4.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/header5.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/header6.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-----Products------->
+
+    <div class="box-row header-box">
+        <div class="box-col">
+            <h3>Free international Returns</h3>
+            <img src="assets/box1-1.jpg"  alt="">
+            <a href="#">Shop More</a>
+        </div>
+        <div class="box-col">
+            <h3>Lunar New Year</h3>
+            <img src="assets/box1-2.jpg"  alt="">
+            <a href="#">Shop More</a>
+        </div>
+        <div class="box-col">
+            <h3>Toy under $25</h3>
+            <img src="assets/box1-3.jpg" alt="">
+            <a href="#">Shop More</a>
+        </div>
+        <div class="box-col">
+            <h3>Deals in PCs</h3>
+            <img src="assets/box1-4.jpg" alt="">
+            <a href="#">Shop More</a>
+        </div>
+    </div>
+
+    <div class="box-row ">
+        <div class="box-col">
+            <h3>Grooming Products</h3>
+            <img src="assets/box2-1.jpg"  alt="">
+            <a href="#">Shop More</a>
+        </div>
+        <div class="box-col">
+            <h3>Latest Devices</h3>
+            <img src="assets/box2-2.jpg"  alt="">
+            <a href="#">Shop More</a>
+        </div>
+        <div class="box-col">
+            <h3>Pets Food</h3>
+            <img src="assets/box2-3.jpg" alt="">
+            <a href="#">Shop More</a>
+        </div>
+        <div class="box-col">
+            <h3>Fashion Mart</h3>
+            <img src="assets/box2-4.jpg" alt="">
+            <a href="#">Shop More</a>
+        </div>
+    </div>
+
+    <!--product image slider-->
+
+    <div class="product-slider">
+      <h2>Best Sellers in Sports & Outdoors</h2>
+      <div class="products">
+        <a href="product.html"><img src="assets/product_img.jpg" alt=""></a>
+        <img src="assets/product1-1.jpg" alt="">
+        <img src="assets/product1-2.jpg" alt="">
+        <img src="assets/product1-3.jpg" alt="">
+        <img src="assets/product1-4.jpg" alt="">
+        <img src="assets/product1-5.jpg" alt="">
+        <img src="assets/product1-6.jpg" alt="">
+        <img src="assets/product1-7.jpg" alt="">
+        <img src="assets/product1-8.jpg" alt="">
+        <img src="assets/product1-9.jpg" alt="">
+        <img src="assets/product1-10.jpg" alt="">
+      </div>
+    </div>
+
+    <!--3rd box rows-->
+    <div class="box-row ">
+      <div class="box-col">
+          <h3>Stationary Items</h3>
+          <img src="assets/box3-1.jpg"  alt="">
+          <a href="#">Shop More</a>
+      </div>
+      <div class="box-col">
+          <h3>Latest Devices</h3>
+          <img src="assets/box3-2.jpg"  alt="">
+          <a href="#">Shop More</a>
+      </div>
+      <div class="box-col">
+          <h3>Furniture</h3>
+          <img src="assets/box3-3.jpg" alt="">
+          <a href="#">Shop More</a>
+      </div>
+      <div class="box-col">
+          <h3>Gaming</h3>
+          <img src="assets/box3-4.jpg" alt="">
+          <a href="#">Shop More</a>
+      </div>
+  </div>
+
+  <!----2nd product slider---->
+
+  <div class="product-slider-with-price">
+    <h2> Deals under $25</h2>
+    <div class="products">
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="assets/product2-1.jpg" alt="">
+        </div>
+        <div class="product-offer">
+          <p class="bg-danger text-white">27% off</p><span>Deals</span>
+        </div>
+        <p class="product-price">$<span>14.49</span> List Price:$19.95</p>
+        <h4>This product is the best for you</h4>
+      </div>
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="assets/product2-2.jpg" alt="">
+        </div>
+        <div class="product-offer">
+          <p class="bg-danger text-white">27% off</p><span>Deals</span>
+        </div>
+        <p class="product-price">$<span>14.49</span> List Price:$19.95</p>
+        <h4>This product is the best for you</h4>
+      </div>
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="assets/product2-3.jpg" alt="">
+        </div>
+        <div class="product-offer">
+          <p class="bg-danger text-white">27% off</p><span>Deals</span>
+        </div>
+        <p class="product-price">$<span>14.49</span> List Price:$19.95</p>
+        <h4>This product is the best for you</h4>
+      </div>
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="assets/product2-4.jpg" alt="">
+        </div>
+        <div class="product-offer">
+          <p class="bg-danger text-white">27% off</p><span>Deals</span>
+        </div>
+        <p class="product-price">$<span>14.49</span> List Price:$19.95</p>
+        <h4>This product is the best for you</h4>
+      </div>
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="assets/product2-5.jpg" alt="">
+        </div>
+        <div class="product-offer">
+          <p class="bg-danger text-white">27% off</p><span>Deals</span>
+        </div>
+        <p class="product-price">$<span>14.49</span> List Price:$19.95</p>
+        <h4>This product is the best for you</h4>
+      </div>
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="assets/product2-6.jpg" alt="">
+        </div>
+        <div class="product-offer">
+          <p class="bg-danger text-white">27% off</p><span>Deals</span>
+        </div>
+        <p class="product-price">$<span>14.49</span> List Price:$19.95</p>
+        <h4>This product is the best for you</h4>
+      </div>
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="assets/product2-7.jpg" alt="">
+        </div>
+        <div class="product-offer">
+          <p class="bg-danger text-white">27% off</p><span>Deals</span>
+        </div>
+        <p class="product-price">$<span>14.49</span> List Price:$19.95</p>
+        <h4>This product is the best for you</h4>
+      </div>
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="assets/product2-8.jpg" alt="">
+        </div>
+        <div class="product-offer">
+          <p class="bg-danger text-white">27% off</p><span>Deals</span>
+        </div>
+        <p class="product-price">$<span>14.49</span> List Price:$19.95</p>
+        <h4>This product is the best for you</h4>
+      </div>
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="assets/product2-9.jpg" alt="">
+        </div>
+        <div class="product-offer">
+          <p class="bg-danger text-white">27% off</p><span>Deals</span>
+        </div>
+        <p class="product-price">$<span>14.49</span> List Price:$19.95</p>
+        <h4>This product is the best for you</h4>
+      </div>
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="assets/product2-10.jpg" alt="">
+        </div>
+        <div class="product-offer">
+          <p class="bg-danger text-white">27% off</p><span>Deals</span>
+        </div>
+        <p class="product-price">$<span>14.49</span> List Price:$19.95</p>
+        <h4>This product is the best for you</h4>
+      </div>
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="assets/product2-11.jpg" alt="">
+        </div>
+        <div class="product-offer">
+          <p class="bg-danger text-white">27% off</p><span>Deals</span>
+        </div>
+        <p class="product-price">$<span>14.49</span> List Price:$19.95</p>
+        <h4>This product is the best for you</h4>
+      </div>
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="assets/product2-12.jpg" alt="">
+        </div>
+        <div class="product-offer">
+          <p class="bg-danger text-white">27% off</p><span>Deals</span>
+        </div>
+        <p class="product-price">$<span>14.49</span> List Price:$19.95</p>
+        <h4>This product is the best for you</h4>
+      </div>
+    </div>
+  </div>
+
+  <!--product slider 3-->
+
+  <div class="product-slider">
+    <h2>Best Sellers in Sports & Outdoors</h2>
+    <div class="products">
+      <img src="assets/product1-1.jpg" alt="">
+      <img src="assets/product1-2.jpg" alt="">
+      <img src="assets/product1-3.jpg" alt="">
+      <img src="assets/product1-4.jpg" alt="">
+      <img src="assets/product1-5.jpg" alt="">
+      <img src="assets/product1-6.jpg" alt="">
+      <img src="assets/product1-7.jpg" alt="">
+      <img src="assets/product1-8.jpg" alt="">
+      <img src="assets/product1-9.jpg" alt="">
+      <img src="assets/product1-10.jpg" alt="">
+    </div>
+  </div>
+
+  <!--box4-->
+
+  <div class="box-row ">
+    <div class="box-col">
+        <h3>Grooming Products</h3>
+        <img src="assets/box2-1.jpg"  alt="">
+        <a href="#">Shop More</a>
+    </div>
+    <div class="box-col">
+        <h3>Fashion Mart</h3>
+        <img src="assets/box2-4.jpg"  alt="">
+        <a href="#">Shop More</a>
+    </div>
+    <div class="box-col">
+        <h3>Pets Food</h3>
+        <img src="assets/box2-3.jpg" alt="">
+        <a href="#">Shop More</a>
+    </div>
+    <div class="box-col">
+        <h3>Deals in PCs</h3>
+        <img src="assets/box1-4.jpg" alt="">
+        <a href="#">Shop More</a>
+    </div>
+  </div>
+
+    <!---------------Footer----------------->
+
+    <footer class="footer">
+      <a href="#Amazon"><button class="Bk-bt">Back to Top</button></a>
+      <div class="div2">
+        <div class="container-xxl">
+          <table class="container-fluid">
+            <tr>
+              <td>
+                <div class="container-fluid">
+                  <div><h6>Get to Know<br>Us</h6></div>
+                  <div class="tl-1"><a href="#">About Amazone</a></div>
+                  <div class="tl-1"><a href="#">Careers</a></div>
+                  <div class="tl-1"><a href="#">Press Releases</a></div>
+                  <div class="tl-1"><a href="#">Amazon Science</a></div>
+                </div>
+              </td>
+              <td>
+                <div class="container-fluid">
+                  <div ><h6>Connect with Us</h6></div>
+                  <div class="tl-1"><a href="#">Facebook</a></div>
+                  <div class="tl-1"><a href="#">Twitter</a></div>
+                  <div class="tl-1"><a href="#">Instagram</a></div>
+                </div>
+              </td>
+              <td>
+                <div class="container-fluid">
+                  <div><h6>Make Money with Us</h6></div>
+                  <div class="tl-1"><a href="#">Sell on Amazon</a></div>
+                  <div class="tl-1"><a href="#">Sell under Amazon Accelerator</a></div>
+                  <div class="tl-1"><a href="#">Protect and Build Your Brand</a></div>
+                  <div class="tl-1"><a href="#">Amazon Global Selling</a></div>
+                  <div class="tl-1"><a href="#">Supply to Amazon</a></div>
+                  <div class="tl-1"><a href="#">Become an Affiliate</a></div>
+                  <div class="tl-1"><a href="#">Fulfilment by Amazon</a></div>
+                  <div class="tl-1"><a href="#">Advertise Your Products</a></div>
+                  <div class="tl-1"><a href="#">Amazon Pay on Merchants</a></div>
+                </div>
+              </td>
+              <td>
+                <div class="container-fluid">
+                  <div><h6>Let Us Help You</h6></div>
+                  <div class="tl-1"><a href="#">Your Account</a></div>
+                  <div class="tl-1"><a href="#">Returns Centre</a></div>
+                  <div class="tl-1"><a href="#">Recalls and Product Safety Alerts</a></div>
+                  <div class="tl-1"><a href="#">100% Purchase Protection</a></div>
+                  <div class="tl-1"><a href="#">Amazon App Download</a></div>
+                  <div class="tl-1"><a href="#">Help</a></div>
+                </div>
+              </td>
+            </tr>
+          </table>
+          <hr>
+          <div class="div2-mgl">
+            <table>
+              <tr>
+                <td><div><img src="assets/amazon_logo.png" width="100" alt=""></div></td>
+                <td>
+                  <div id="lng" class="btn text-white border border-1 bg-transparent">
+                    <label for="langu"><i class="bi bi-globe"></i></label>
+                    <select class=" bg-transparent border-0 text-white" name="langu" id="langu">
+                      <option value="English-ENG" class="text-black">English-ENG</option>
+                      <option value="English-ENG" class="text-black">Tamil-TA</option>
+                      <option value="English-ENG" class="text-black">Telugu-TE</option>
+                      <option value="English-ENG" class="text-black">Malayalam-MA</option>
+                    </select>
+                  </div>
+                </td>
+                <td><div class="div2-st"><button class="btn border border-1 bg-transparent text-white"><img src="assets/us_flag.png" width="20" alt="">United Kingdom</button></div></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="div3">
+        <table>
+          <tr class="tp1">
+            <td><p><a href="">
+              AbeBooks <br>
+              Books, art <br>
+              & collectibles</a></p>
+            </td>
+            <td>
+              <p>
+                <a href="">
+                  Amazon Web Services <br>
+                  Scalable Cloud <br>
+                  Computing Services 
+                </a>
+              </p>
+            </td>
+            <td>
+              <p>
+                <a href="">Audible <br>
+                  Download <br>
+                  Audio Books</a>
+              </p>
+            </td>
+            <td>
+              <p>
+                <a href="">	IMDb <br>
+                  Movies, TV <br>
+                  & Celebrities</a>
+              </p>
+            </td>
+          </tr>
+          <tr class="tp2">
+            <td>
+              <p>
+                <a href="">Shopbop <br>
+                  Designer <br>
+                  Fashion Brands</a>
+              </p>
+            </td>
+            <td>
+              <p>
+                <a href="">Amazon Business <br>
+                  Everything For <br>
+                  Your Business</a>
+              </p>
+            </td>
+            <td>
+              <p>
+                <a href="">	Prime Now <br>
+                  2-Hour Delivery <br>
+                  on Everyday Items</a>
+              </p>
+            </td>
+            <td>
+              <p>
+                <a href="">Amazon Prime Music <br>
+                  100 million songs, ad-free <br>
+                  Over 15 million podcast episodes</a>
+              </p>
+            </td>
+          </tr>
+        </table>
+        <p id="last"><i class="bi bi-c-circle"></i> 1996-2024, Amazone.com, Inc. or its affiliated</p>
+      </div>
+    </footer>
+
+
+
+
+
+
+    <!--java script link-->
+    <script src="script.js"></script>
+    <!---Bootstrap js-->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
