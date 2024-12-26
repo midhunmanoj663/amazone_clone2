@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Account Create</title>
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/thumbnails/014/018/561/small/amazon-logo-on-transparent-background-free-vector.jpg">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container main">
+        <div class="container-fluid "><a href="" class="text-decoration-none text-black"><img src="assets/amazon_logo_dark.png" width="100" alt="">.in</a></div>
+        <div class="container si-box">
+            <h2>Create Account</h2>
+            <form action="">
+                <label for="yourname">Your name</label><br>
+                <input type="text" placeholder="First and last name" required><br>
+                <br>
+                <label for="number">Mobile number</label><br>
+                <label for="num"></label>
+                <select name="num" id="" class="w-25">
+                    <option value="India">In +91</option>
+                    <option value="Afghanistan">Afghanistan +93</option>
+                    <option value="Albania">Albania +355</option>
+                    <option value="Algeria">Algeria +213</option>
+                    <option value="American Samoa">American Samoa +1</option>
+                    <option value="Andorra">Andorra	+376</option>
+                    <option value="Angola">Angola +244</option>
+                    <option value="Anguilla">Anguilla +1</option>
+                    <option value="Antarctica">Antarctica +672</option>
+                    <option value="Bahamas">Bahamas +1</option>
+                    <option value="Bangladesh">Bangladesh +880</option>
+                    <option value="Belgium">Belgium +32</option>
+                    <option value="Belize">Belize +501</option>
+                    <option value="Chile">Chile +56</option>
+                    <option value="China">China +86</option>
+                    <option value="Colombia">Colombia +57</option>
+                    <option value="Comoros">Comoros +269</option>
+                    <option value="Denmark">Denmark +45</option>
+                    <option value="Egypt">Egypt +20</option>
+                    <option value="El Savador">El Savador +503</option>
+                    <option value="France">France +33</option>
+                    <option value="Georgia">Georgia +995</option>
+                    <option value="Germany">Germany +49</option>
+                    <option value="Hong Kong">Hong Kong +852</option>
+                    <option value="Iceland">Iceland +345</option>
+                    <option value="India">Indian +91</option>
+                    <option value="Indonesia">Indonesia +62</option>
+                    <option value="Yemen">Yemen +967</option>
+                    <option value="Zambia">Zambia +260</option>
+                </select>
+                <input type="text" name="num" placeholder="Mobile number" class="w-50"required><br>
+                <label for="Pass">password</label><br>
+                <input type="password" id="password" oninput="checkLength()">
+                <p id="error-msg" style="color: red; display: none;">Need at least 6 characters</p>
+                <p><i class="bi bi-info-circle-fill text-primary"></i>Passwords must be at least 6 characters.</p>
+                <p>To verify your number, we will send you a text message with a temporary code. Message and data rates may apply.</p>
+                <button type="submit" class="btn btn-warning" id="submit-btn">verify mobile number</button>
+            </form>
+            <hr>
+            <p>
+                <b>Buying for work?</b>
+                <a href="" class="text-decoration-none">Create a free business account</a>
+            </p>
+            <hr>
+            <div>
+                <p>
+                    <b>Already have an account?</b><a href="sign.html" class="text-decoration-none">Sign in</a>
+                </p>
+                <p>
+                    By creating an account or logging in, you agree to Amazon’s <a href="">Conditions of Use</a> and <a href="">Privacy Policy</a>.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <table>
+            <tr>
+                <td><a href="">Conditions of Use</a></td>
+                <td><a href="" class="ms-4">Privacy Notice</a></td>
+                <td><a href="" class="ms-4">Help</a></td>
+            </tr>
+        </table><br>
+        <p id="last"><i class="bi bi-c-circle"></i> 1996-2024, Amazone.com, Inc. or its affiliated</p>
+    </div>
+    
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+    <!---Bootstrap js-->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

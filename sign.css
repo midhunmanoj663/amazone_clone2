@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+.main{
+    margin-top: 10px;
+}
+.ctr{
+    align-items: center;
+}
+.container-fluid{
+    margin-left: 570px;
+}
+.sg-box{
+    width: 400px;
+    height: auto;
+    border: 1px solid grey;
+    border-radius: 10px;
+    align-items: center;
+    padding-left: 10px;
+    padding: 40px 50px;
+}
+#cnt-for-sg{
+    font-size: 12px;
+}
+.sg-box form button{
+    margin-top: 10px;
+    width: 300px;
+    height: 27px;
+    text-align: center;
+    font-size: 13px;
+}
+.sg-box form input{
+    border-radius: 5px;
+    width: 300px;
+}
+.crt{
+    margin-left: 450px;
+    width: 400px;
+}
+.crt-bt{
+    border: 1px solid black;
+}
+.crt-bt:hover{
+    background-color: rgb(235, 231, 231);
+    color: black;
+}
+.main table{
+    margin-left: 500px;
+}
+.try table tr td p{
+    margin-top: 15px;
+}
+#last{
+    font-size: 13px;
+    margin-left: 500px;
+}

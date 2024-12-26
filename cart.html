@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Cart</title>
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/thumbnails/014/018/561/small/amazon-logo-on-transparent-background-free-vector.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <!--head navigation bar-->
+    <nav class="navbar navbar-expand-lg" id="Amazon">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="assets/amazon_logo.png" width="100" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <!--Location-->
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                    <div class="nv-contry">
+                        <div>
+                            Deliver to United states<br>
+                            <b><i class="bi bi-geo-alt"></i>Update Location</b>
+                        </div>
+                    </div>
+                </a>
+              </li>
+
+              <!--Search bar-->
+
+              <form class="d-flex nv-search" role="search">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="nv-search-drp">
+                      All
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <input class="form-control me-2 rounded-0" type="search" placeholder="Search Amazone.in" aria-label="Search" id="search-bar">
+                <button class="btn btn-warning " id="nv-search-btn" type="search"><img src="assets/search_icon.png" width="25" alt=""></button>
+              </form>
+
+              <!-------------Language------------->
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/us_flag.png" width="20" alt="">EN
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+              <!------------------Sign in----------------->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    hello,sign in <br>Account & Lists
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="sign.html">Sign in</a></li>
+                  <li><a class="dropdown-item" href="signup.html">signup</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                </ul>
+              </li>
+
+              <!--Return and orders-->
+
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Returns<br>& Orders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="cart.html"><img src="assets/cart_icon.png" width="40" alt=""> Cart</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!--2nd navigatin bar-->
+    
+    <nav class="navbar navbar-expand-lg" id="nvbr1">
+        <div class="container-fluid" id="nvbr2">
+
+            <!--ALL-->
+
+            <a class="navbar-brand text-white" href="#">
+                <i class="bi bi-list"></i>All
+            </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <!--DROPDOWN1-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Fresh
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">MX Player</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Sell</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Best Sellers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Today's Deals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Mobiles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Customer Service</a>
+              </li>
+
+              <!--DROPDOWN 2-->
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Prime
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link text-white" href="#">Electronics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Home & Kitchen</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Amazone Pay</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">New Releases</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Fashion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Car & Motorbike</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Computers</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-------Body part-------->
+      
+      <div class="cart">
+        <div class="cart-left bg-white pb-2">
+            <div class="mg-part"><img src="https://m.media-amazon.com/images/G/31/cart/empty/kettle-desaturated._CB424694257_.svg" width="450px"  alt=""></div>
+            <div class="cnt-part">
+                <h2>Your Amazone Cart is empty</h2>
+                <p><a href="#" class="text-primary">Shope today's deals</a></p>
+                <div>
+                    <table>
+                        <tr>                 <!--sign in button-->
+                            <td><a href="sign.html"><button class="btn btn-warning rounded-pill ms-2 me-3">Sign in to your account</button></a></td>
+                                             <!--sign up button-->
+                            <td><a href="signup.html"><button class="btn border border-dark border-1  rounded-pill ">sign up now</button></a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="cart-right"></div>
+      </div>
+      <div class="bg-white empt"></div>
+      <div class="ref-text">
+        <p>
+            The price and availability of items at Amazon.in are subject to change. The shopping cart is a temporary place to store a list of your items and reflects each item's most recent price.<br>Do you have a promotional code? We'll ask you to enter your claim code when it's time to pay.
+        </p>
+      </div>
+      <div class="bg-white pt-3 pb-4">
+            <hr>
+            <div class="text-center">
+                <h1>See personalized recommendations</h1>
+                <a href="#"><button class="btn btn-warning rounded-pill ">Sign in</button></a>
+                <p>
+                    New Customer? <a href="#" class="text-primary text-decoration-underline">Start here</a>
+                </p>
+            </div>
+            <hr>
+        </div>
+    
+
+
+
+
+
+      <!-----------Footer-------------->
+
+    <footer class="ftr">
+        <a href="#Amazon"><button class="Bk-bt">Back to Top</button></a>
+        <div class="div2">
+          <div class="container">
+            <table>
+              <tr>
+                <td>
+                  <div>
+                    <div><h6>Get to Know<br>Us</h6></div>
+                    <div class="tl-1"><a href="#">About Amazone</a></div>
+                    <div class="tl-1"><a href="#">Careers</a></div>
+                    <div class="tl-1"><a href="#">Press Releases</a></div>
+                    <div class="tl-1"><a href="#">Amazon Science</a></div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <div ><h6>Connect with Us</h6></div>
+                    <div class="tl-1"><a href="#">Facebook</a></div>
+                    <div class="tl-1"><a href="#">Twitter</a></div>
+                    <div class="tl-1"><a href="#">Instagram</a></div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <div><h6>Make Money with Us</h6></div>
+                    <div class="tl-1"><a href="#">Sell on Amazon</a></div>
+                    <div class="tl-1"><a href="#">Sell under Amazon Accelerator</a></div>
+                    <div class="tl-1"><a href="#">Protect and Build Your Brand</a></div>
+                    <div class="tl-1"><a href="#">Amazon Global Selling</a></div>
+                    <div class="tl-1"><a href="#">Supply to Amazon</a></div>
+                    <div class="tl-1"><a href="#">Become an Affiliate</a></div>
+                    <div class="tl-1"><a href="#">Fulfilment by Amazon</a></div>
+                    <div class="tl-1"><a href="#">Advertise Your Products</a></div>
+                    <div class="tl-1"><a href="#">Amazon Pay on Merchants</a></div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <div><h6>Let Us Help You</h6></div>
+                    <div class="tl-1"><a href="#">Your Account</a></div>
+                    <div class="tl-1"><a href="#">Returns Centre</a></div>
+                    <div class="tl-1"><a href="#">Recalls and Product Safety Alerts</a></div>
+                    <div class="tl-1"><a href="#">100% Purchase Protection</a></div>
+                    <div class="tl-1"><a href="#">Amazon App Download</a></div>
+                    <div class="tl-1"><a href="#">Help</a></div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <hr>
+            <div class="div2-mgl">
+              <table>
+                <tr>
+                  <td><div><img src="assets/amazon_logo.png" width="100" alt=""></div></td>
+                  <td>
+                    <div id="lng" class="btn text-white border border-1 bg-transparent border-outline-0">
+                      <label for="langu"><i class="bi bi-globe"></i></label>
+                      <select class=" bg-transparent border-0 text-white" name="langu" id="langu">
+                        <option value="English-ENG" class="text-black">English-ENG</option>
+                        <option value="English-ENG" class="text-black">Tamil-TA</option>
+                        <option value="English-ENG" class="text-black">Telugu-TE</option>
+                        <option value="English-ENG" class="text-black">Malayalam-MA</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td><div class="div2-st"><button class="btn border border-1 border-outline-0 bg-transparent text-white"><img src="assets/us_flag.png" width="20" alt="">United Kingdom</button></div></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="div3">
+          <table>
+            <tr class="tp1">
+              <td><p><a href="">
+                AbeBooks <br>
+                Books, art <br>
+                & collectibles</a></p>
+              </td>
+              <td>
+                <p>
+                  <a href="">
+                    Amazon Web Services <br>
+                    Scalable Cloud <br>
+                    Computing Services 
+                  </a>
+                </p>
+              </td>
+              <td>
+                <p>
+                  <a href="">Audible <br>
+                    Download <br>
+                    Audio Books</a>
+                </p>
+              </td>
+              <td>
+                <p>
+                  <a href="">	IMDb <br>
+                    Movies, TV <br>
+                    & Celebrities</a>
+                </p>
+              </td>
+            </tr>
+            <tr class="tp2">
+              <td>
+                <p>
+                  <a href="">Shopbop <br>
+                    Designer <br>
+                    Fashion Brands</a>
+                </p>
+              </td>
+              <td>
+                <p>
+                  <a href="">Amazon Business <br>
+                    Everything For <br>
+                    Your Business</a>
+                </p>
+              </td>
+              <td>
+                <p>
+                  <a href="">	Prime Now <br>
+                    2-Hour Delivery <br>
+                    on Everyday Items</a>
+                </p>
+              </td>
+              <td>
+                <p>
+                  <a href="">Amazon Prime Music <br>
+                    100 million songs, ad-free <br>
+                    Over 15 million podcast episodes</a>
+                </p>
+              </td>
+            </tr>
+          </table>
+          <p id="last"><i class="bi bi-c-circle"></i> 1996-2024, Amazone.com, Inc. or its affiliated</p>
+        </div>
+      </footer>
+  
+  
+  
+  
+  
+  
+      <!--java script link-->
+      <script src="script.js"></script>
+      <!---Bootstrap js-->
+  
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="js/bootstrap.js"></script>
+</body>
+</html>

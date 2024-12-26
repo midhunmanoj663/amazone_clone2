@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.cart-left{
+    display: flex;
+    height: auto;
+    width: 1150px;
+    max-height: 1000px;
+    overflow: hidden;
+    padding-top: 50px;
+    margin-top: 30px;
+}
+.mg-part{
+    display: flex;
+    float: inline-start;
+    padding-bottom: 50px;
+}
+.cnt-part{
+    margin-top: 50px;
+}
+.empt{
+    display: flex;
+    width: 1150px;
+    height: 50px;
+    margin-top: 20px;
+}
+.ref-text{
+    display: flex;
+    margin-top: 20px;
+    width: 1100px;
+}
+.ref-text p{
+    display: flex;
+    font-size: 13px;
+}
+.text-center a button{
+    width: 290px;
+    font-size: 12px;
+}
+.ftr{
+    margin-top: 0;
+}
+
+
